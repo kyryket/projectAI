@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Технологии и автоматизация</title>
+        <link rel="stylesheet" href="style6.css" type="text/css">
+        <meta charset="UTF-8">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+        <script defer src="script.js"></script>
+    </head>
+    <body class="philosopher-regular-italic">
+        <header>
+            <div class="bg">
+                <a href="index.html">Главная страница</a>  
+                <a href="index2.html">Технологии и авм</a>  
+                <a href="index3.html">Общество и коммуникации</a>  
+                <a href="index4.html">Экономика и работа</a>  
+                <a href="index5.html">Будущее медицины с ИИ</a>
+                <a href="#dis"><img src="footerimg.jpg"</a>
+                <a href="#tel"><img src="footer2.png"></a>
+                <a href="#git"><img src="footer4.png"></a>
+            </div>
+
+            
+            <h1>Обо мне</h1>
+            <nav><div id = "slider">
+                    <img src="slidernew.png">
+                    <img src="Paint2.png">
+                    <img src="Paint3.png">
+                </div>
+            </nav>
+            
+            <div id="robot-text">Привет! Я ваш помощник 🤖</div>
+            <img src="assist2.png" id="robot-assistant">
+        </header>
+        <main>
+            <section>
+                <h2>Кто я?</h2>
+                Привет меня зовут Тян Амир.<br><br>На данный момент учусь по курсу основы Frontend разроботки,<br>также прошел UNITY PRO,PYTHON PRO.
+            </section>
+
+            <section>
+                <h2>Достижения</h2>
+                <ul>
+                    <li>Занял 1 место на хакатоне Imposter Games</li><br><br>
+                    <li>Прошел Unity Pro и Python Pro</li><br><br>
+                    <li>Участвую уже на 3 хакатоне</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Будущее</h2>
+                <ul>
+                    <li>Создание сайтов</li><br><br>
+                    <li>Создание 2д и 3д игр</li><br><br>
+                    <li>Создание сложных программ</li>
+                </ul>
+            </section>
+
+            <form>
+                <label>Связаться со мной</label>
+                <input type="email" placeholder="name@post.com" onchange="changeEmail(this.value)">
+                <input type="text" placeholder="Введите имя" onchange="changeName(this.value)">
+                <input type="text" placeholder="Введите фамилию" onchange="changeSurname(this.value)">
+                <input type="text" placeholder="Письмо:" onchange="changeReview(this.value)">
+                <input type="button" value="Отправить" onclick="clickSubmit2()">
+            </form>
+        </main>
+        <footer>
+            <a href="https://www.tiktok.com/@kr1kent1._?lang=ru-RU"><img src="footerimg.jpg" id="dis" class="fr"></a>
+            <a href="https://t.me/Kyryket7"><img src="footer2.png" id="tel"></a>
+            <a href="https://github.com/kyryket"><img src="footer4.png" id="git"></a>
+            <div>Any questinos? +7-778-429-8266</div>
+        </footer>
+    </body>
+</html>

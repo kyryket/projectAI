@@ -1,0 +1,344 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #EAEAEA;
+}
+
+.philosopher-regular {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.philosopher-bold {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.philosopher-regular-italic {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.philosopher-bold-italic {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* body {
+  font-size: 27px;
+  background-image: url('Paint7.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+i {
+  color: darkgrey;
+}
+
+img {
+    height: 430px;
+    width: 750px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.bt {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+
+#slider {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#slider img {
+  position: absolute;
+  top:0;
+  left: 0;
+  max-width: 100%;
+  transition: transform 1.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.move-left {
+  transform: translateX(-100%);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+input {
+  height: 60px;
+  width: 280px;
+  margin-top: 20px;
+  margin-left: 71px;
+  border-radius: 15px;
+  background: rgb(15, 15, 187);
+  color: #EAEAEA;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+#ak {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 115, 255, 0.858);
+  border: solid;
+  border-radius: 10px;
+  text-align: center;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+#robot-assistant {
+  position: fixed;
+  left: 0px;
+  top: 40px;
+  width: 150px;
+  height: auto;
+  animation: shake 4s infinite ease-in-out;
+}
+
+#robot-text {
+  position: fixed;
+  left: 80px;
+  top: 100px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  width: 200px;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+main {
+  color: #EAEAEA;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  background-color: rgb(8, 8, 70);
+  border: solid darkblue 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@keyframes pulse2 {
+  0% { box-shadow: 0 0 5px rgba(0, 115, 255, 0.8); }
+  50% { box-shadow: 0 0 20px rgba(0, 115, 255, 1); }
+  100% { box-shadow: 0 0 5px rgba(0, 115, 255, 0.8); }
+}
+
+input:hover {
+  background-color: rgb(43, 94, 224);
+  box-shadow: 5px 5px 4px black;
+  animation: pulse2 1s infinite;
+}
+
+header {
+  font-size: 27px;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+header a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  animation: wave 0.5s ease-in-out;
+}
+
+a img {
+  height: 55px;
+  width: 55px;
+  padding-bottom: 13px;
+}
+
+div a img{
+  border-radius: 0;
+  margin-right: 10px;
+}
+
+.bg {
+  background-color: darkblue;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes wave {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+section {
+  background-image:url(Paint7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  height: 450px;
+  width: 510px;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.8s ease-in-out;
+}
+
+section input {
+  margin-left: 100px;
+}
+
+section:hover {
+  transform: scale(1.05);
+  animation: pulse2 2s infinite;
+}
+
+main img:hover {
+  transform: scale(1.05);
+  animation: pulse2 2s infinite;
+}
+
+main img {
+  border-radius: 20px;
+  height: 450px;
+  width: 510px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.8s ease-in-out;
+}
+
+main label {
+  color: #EAEAEA;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+footer {
+  color: #EAEAEA;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  background-image: url(bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid darkblue 10px;
+  height: 250px;
+}
+
+footer img {
+  width: 170px;
+  height: 170px;
+  margin-top: 20px;
+  margin-left: 250px;
+  margin-bottom: 1px;
+  transition: transform 0.6s ease-in-out;
+  animation: shake 5s infinite;
+}
+
+footer img:hover {
+  transform: scale(1.1);
+}
+
+footer div {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+form {
+  border-radius: 20px;
+  height: 600px;
+  width: 510px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  background-image:url(Paint7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+  padding-right: 55px;
+  font-size: 20px;
+}
+
+form input:hover {
+  animation: pulse2 1s infinite;
+}
+
+form input::placeholder {
+  text-align: center;
+}
+
+form label {
+  padding-left: 75px;
+}
